@@ -12,6 +12,9 @@ def embedded_pdf(pdf):
 def embedded_audio(audio_src):
     return '<figure><audio controls src="%s">Your browser does not support the<code>audio</code> element.</audio></figure>' % (audio_src)
 
+def music_content(title):
+    pass
+
 def main():
 
     items = []
