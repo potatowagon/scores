@@ -14,7 +14,7 @@
     </audio>
 </figure>
 
-<object data="https://potatowagon.github.io/scores/done/the_eggs.pdf" type="application/pdf" width="700px" height="700px">
+<object data="https://potatowagon.github.io/scores/done/the_eggs.pdf" type="application/pdf" width="1000px" height="1000px">
     <embed src="https://potatowagon.github.io/scores/done/the_eggs.pdf">
     </embed>
 </object>
@@ -31,7 +31,7 @@
     </audio>
 </figure>
 
-<object data="https://potatowagon.github.io/scores/done/Conflicts_Over_Smoky_Mountains.pdf" type="application/pdf" width="700px" height="700px">
+<object data="https://potatowagon.github.io/scores/done/Conflicts_Over_Smoky_Mountains.pdf" type="application/pdf" width="1000px" height="1000px">
     <embed src="https://potatowagon.github.io/scores/done/Conflicts_Over_Smoky_Mountains.pdf">
     </embed>
 </object>
