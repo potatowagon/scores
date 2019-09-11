@@ -5,6 +5,15 @@
 ### the eggs
 [the_eggs.pdf](https://potatowagon.github.io/scores/done/the_eggs.pdf)
 
+<figure>
+    <audio
+        controls
+        src="https://potatowagon.github.io/scores/done/the_eggs.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+
 <object data="https://potatowagon.github.io/scores/done/the_eggs.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://potatowagon.github.io/scores/done/the_eggs.pdf">
     </embed>
