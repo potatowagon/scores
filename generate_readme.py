@@ -88,8 +88,8 @@ class MarkdownUtils():
         return '<figure><audio controls src=\"%s\">Your browser does not support the<code>audio</code> element.</audio></figure>' % (audio_src)
 
     @classmethod
-    def last_update(cls):
-        return "Last update %s" % str(datetime.now())
+    def last_update_timestamp(cls):
+        return "Last updated on %s" % str(datetime.now())
     
     @classmethod
     def write_readme(cls, txt):
@@ -106,7 +106,7 @@ def main():
     header1 = "# Scores"
     musescore_link = "[musecore, no pro `:(`](https://musescore.com/user/28262500)"
     soundcloud_link = "[Soundcloud](https://soundcloud.com/sherry-wong-59815924)"
-    docs_link = "[This page is generated with a python script!](https://potatowagon.github.io/scores/docs.md)"
+    docs_link = "[This page is generated with a python script!](docs.md)"
 
     items.append(header1)
     items.append(musescore_link)
@@ -123,7 +123,7 @@ def main():
     wip_music_content_creator = MusicContentCreator(os.path.join(os.getcwd(), "wip"), wip_spotlight)
     wip_music_section = wip_music_content_creator.make_music_content_section()
     items.append(wip_music_section)
-    items.append(MarkdownUtils.last_update())
+    items.append(MarkdownUtils.last_update_timestamp())
 
     md = '\n\n'.join(items)
     MarkdownUtils.write_readme(md)
