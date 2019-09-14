@@ -91,7 +91,7 @@ def main():
     items = []
 
     done_spotlight = ["the_eggs"]
-    wip_spotlight = ["secret_diaries"]
+    wip_spotlight = ["Secret_Diary"]
 
     header1 = "# Scores"
     header1_content = "[musecore, no pro `:(`](https://musescore.com/user/28262500)\n\n[Soundcloud](https://soundcloud.com/sherry-wong-59815924)"
