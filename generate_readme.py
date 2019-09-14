@@ -6,7 +6,7 @@ class Music():
 
     def __init__(self, pdf: str):
         '''
-        Create a Music instance to hold music data
+        Music data structure to hold music data
 
         Args:
             pdf (str): relative path to pdf, with where this file is at being the root reference
@@ -106,7 +106,7 @@ def main():
     header1 = "# Scores"
     musescore_link = "[musecore, no pro `:(`](https://musescore.com/user/28262500)"
     soundcloud_link = "[Soundcloud](https://soundcloud.com/sherry-wong-59815924)"
-    docs_link = "[This page is generated with a python script](doc.md)"
+    docs_link = "[This page is auto-generated with a python script!](doc.md)"
 
     items.append(header1)
     items.append(musescore_link)
