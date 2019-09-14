@@ -106,7 +106,7 @@ def main():
     header1 = "# Scores"
     musescore_link = "[musecore, no pro `:(`](https://musescore.com/user/28262500)"
     soundcloud_link = "[Soundcloud](https://soundcloud.com/sherry-wong-59815924)"
-    docs_link = "[This page is generated with a python script!](docs.md)"
+    docs_link = "[This page is generated with a python script](doc.md)"
 
     items.append(header1)
     items.append(musescore_link)

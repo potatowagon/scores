@@ -1,4 +1,4 @@
-# Docs
+# Doc
 
 ## The inspiration
 
