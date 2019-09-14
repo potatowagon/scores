@@ -1,5 +1,6 @@
 import os
 import re
+from datetime import datetime
 
 class Music():
 
@@ -34,16 +35,10 @@ class MusicContentCreator():
         self.music_list = self._collect_music(dir_path)
         self.music_content_list = []
 
-    def _embedded_pdf(self, pdf):
-        return '<object data=\"%s\" type=\"application/pdf\" width=\"1000px\" height=\"500px\"><embed src="%s"></embed></object>' % (pdf, pdf)
-
-    def _embedded_audio(self, audio_src):
-        return '<figure><audio controls src=\"%s\">Your browser does not support the<code>audio</code> element.</audio></figure>' % (audio_src)
-
     def _music_content(self, music: Music):
         header = '### ' + music.title.replace('_', ' ')
         pdf_link = '[%s.pdf](%s)' % (music.title, music.pdf)
-        return '\n\n'.join([header, self._embedded_audio(music.audio_src), pdf_link, self._embedded_pdf(music.pdf)])
+        return '\n\n'.join([header, MarkdownUtils.embedded_audio(music.audio_src), pdf_link, MarkdownUtils.embedded_pdf(music.pdf)])
 
     def _collect_music(self, dir_path):
         music_list = []
@@ -82,9 +77,24 @@ class MusicContentCreator():
 
         return '\n\n'.join(self.music_content_list) 
 
-def write_readme(txt):
-    with open("README.md", "w+") as md:
-        md.write(txt)
+class MarkdownUtils():
+    
+    @classmethod
+    def embedded_pdf(cls, pdf):
+        return '<object data=\"%s\" type=\"application/pdf\" width=\"1000px\" height=\"500px\"><embed src="%s"></embed></object>' % (pdf, pdf)
+
+    @classmethod
+    def embedded_audio(cls, audio_src):
+        return '<figure><audio controls src=\"%s\">Your browser does not support the<code>audio</code> element.</audio></figure>' % (audio_src)
+
+    @classmethod
+    def last_update(cls):
+        return "Last update %s" % str(datetime.now())
+    
+    @classmethod
+    def write_readme(cls, txt):
+        with open("README.md", "w+") as md:
+            md.write(txt)
 
 def main():
 
@@ -94,10 +104,14 @@ def main():
     wip_spotlight = ["Secret_Diary"]
 
     header1 = "# Scores"
-    header1_content = "[musecore, no pro `:(`](https://musescore.com/user/28262500)\n\n[Soundcloud](https://soundcloud.com/sherry-wong-59815924)"
+    musescore_link = "[musecore, no pro `:(`](https://musescore.com/user/28262500)"
+    soundcloud_link = "[Soundcloud](https://soundcloud.com/sherry-wong-59815924)"
+    docs_link = "[This page is generated with a python script!](https://potatowagon.github.io/scores/docs.md)"
 
     items.append(header1)
-    items.append(header1_content)
+    items.append(musescore_link)
+    items.append(soundcloud_link)
+    items.append(docs_link)
     
     done_music_content_creator = MusicContentCreator(os.path.join(os.getcwd(), "done"), done_spotlight)
     done_music_section = done_music_content_creator.make_music_content_section()
@@ -109,8 +123,9 @@ def main():
     wip_music_content_creator = MusicContentCreator(os.path.join(os.getcwd(), "wip"), wip_spotlight)
     wip_music_section = wip_music_content_creator.make_music_content_section()
     items.append(wip_music_section)
+    items.append(MarkdownUtils.last_update())
 
     md = '\n\n'.join(items)
-    write_readme(md)
+    MarkdownUtils.write_readme(md)
 
 main()

@@ -4,6 +4,8 @@
 
 [Soundcloud](https://soundcloud.com/sherry-wong-59815924)
 
+[This page is generated with a python script!](https://potatowagon.github.io/scores/docs.md)
+
 ### the eggs
 
 <figure><audio controls src="https://potatowagon.github.io/scores/done/the_eggs.wav">Your browser does not support the<code>audio</code> element.</audio></figure>
@@ -85,3 +87,5 @@
 [The_Marketplace.pdf](https://potatowagon.github.io/scores/wip/The_Marketplace.pdf)
 
 <object data="https://potatowagon.github.io/scores/wip/The_Marketplace.pdf" type="application/pdf" width="1000px" height="500px"><embed src="https://potatowagon.github.io/scores/wip/The_Marketplace.pdf"></embed></object>
+
+Last update 2019-09-15 02:48:27.200573
