@@ -84,7 +84,6 @@ class MusicContentCreator():
 
 def write_readme(txt):
     with open("README.md", "w+") as md:
-        print("hi")
         md.write(txt)
 
 def main():
