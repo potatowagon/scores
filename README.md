@@ -64,6 +64,22 @@
 
 <object data="https://potatowagon.github.io/scores/wip/mundane_life.pdf" type="application/pdf" width="1000px" height="500px"><embed src="https://potatowagon.github.io/scores/wip/mundane_life.pdf"></embed></object>
 
+### paparazzi
+
+<figure><audio controls src="https://potatowagon.github.io/scores/wip/paparazzi.mp3">Your browser does not support the<code>audio</code> element.</audio></figure>
+
+[paparazzi.pdf](https://potatowagon.github.io/scores/wip/paparazzi.pdf)
+
+<object data="https://potatowagon.github.io/scores/wip/paparazzi.pdf" type="application/pdf" width="1000px" height="500px"><embed src="https://potatowagon.github.io/scores/wip/paparazzi.pdf"></embed></object>
+
+### paparazzi second voice
+
+<figure><audio controls src="https://potatowagon.github.io/scores/wip/paparazzi_second_voice.mp3">Your browser does not support the<code>audio</code> element.</audio></figure>
+
+[paparazzi_second_voice.pdf](https://potatowagon.github.io/scores/wip/paparazzi_second_voice.pdf)
+
+<object data="https://potatowagon.github.io/scores/wip/paparazzi_second_voice.pdf" type="application/pdf" width="1000px" height="500px"><embed src="https://potatowagon.github.io/scores/wip/paparazzi_second_voice.pdf"></embed></object>
+
 ### Swam
 
 <figure><audio controls src="https://potatowagon.github.io/scores/wip/Swam.mp3">Your browser does not support the<code>audio</code> element.</audio></figure>
@@ -88,4 +104,4 @@
 
 <object data="https://potatowagon.github.io/scores/wip/The_Marketplace.pdf" type="application/pdf" width="1000px" height="500px"><embed src="https://potatowagon.github.io/scores/wip/The_Marketplace.pdf"></embed></object>
 
-Last updated on 2019-09-15 13:40:29.548548
+Last updated on 2019-10-16 09:57:29.568883
